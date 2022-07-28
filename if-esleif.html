@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-elseif</title>
+</head>
+<body>
+    
+    <!-- <input type="text" name="" id="inp">
+    <button type="submit" onclick="fun()">submit</button>
+    <script>
+        function fun(){
+            var a = document.getElementById("inp").value;
+        document.write(typeof a);
+        } -->
+<label for="">chemistry</label>
+<input type="text" id="che">
+<br>
+<br>
+<label for="">physics</label>        
+<input type="text" id="phy">
+<br>
+<br>
+<label for="">english</label>        
+<input type="text" id="eng">
+<br>
+<br>
+<label for="">urdu</label>        
+<input type="text" id="urdu">
+<br>
+<br>
+<label for="">maths</label>        
+<input type="text" id="maths">
+<br>
+<br>
+<button type="submit" onclick="res()">submit</button>
+<div id="demo"></div>
+<script>
+function res(){
+    
+    var c = parseInt(document.getElementById("che").value);
+    var p = parseInt(document.getElementById("phy").value);
+    var e = parseInt(document.getElementById("eng").value);
+    var u = parseInt(document.getElementById("urdu").value);
+    var m = parseInt(document.getElementById("maths").value);
+   var obt = c+p+e+u+m;
+   var per =(obt/500)*100;
+   if (per>=80){
+       document.getElementById("demo").innerHTML = "chemistry " +c+"<br> physics"+p+"<br> english"+e+"<br> urdu"+u+"<br> maths"+m+"<br> obtain"+obt+"<br> per"+per+"<br> grade A+";
+   }
+   else if (per>=70 && per<80){
+    document.getElementById("demo").innerHTML = "chemistry "+c+"<br> physics"+p+"<br> english"+e+"<br> urdu"+u+"<br> maths"+m+"<br> obt"+obt+"<br> per"+per+"<br> grade A";
+   
+   }else if (per>=60 && per<=70){
+    document.getElementById("demo").innerHTML = "chemistry"+c+"<br> physics"+p+"<br> english"+e+"<br> urdu"+u+"<br> maths"+m+"<br> obt"+obt+"<br> per"+per+"<br> grade B";
+  
+   }
+   else if (per>=50 && per<=60){
+    document.getElementById("demo").innerHTML = "chemistry"+c+"<br> physics"+p+"<br> english"+e+"<br> urdu"+u+"<br> maths"+m+"<br> obt"+obt+"<br> per"+per+"<br> grade C";
+  
+   }
+   else {
+    document.getElementById("demo").innerHTML = "chemistry"+c+"<br> physics"+p+"<br> english"+e+"<br> urdu"+u+"<br> maths"+m+"<br> obt"+obt+"<br> per"+per+"<br> fail";
+   
+   }
+}
+
+
+</script>
+
+
+
+    
+</body>
+</html>

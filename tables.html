@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        thead tr {
+             background-color:black;
+              color: white;
+            }
+            td,th{
+                padding: 10px;
+            }
+            td:hover{
+                background-color: black;
+                color: white;
+            }
+            td{
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <table border="1px">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+         <tbody>
+             <tr>
+                 <td>Ali</td>
+                 <td>Ali@gmail.com</td>
+                 <td rowspan="3">Karachi</td>
+                 <td>Pakistan</td>
+             </tr>
+             <tr>
+                 <td>Sam</td>
+                 <td>Sam@gmail.com</td>
+                 
+                 <td>Pakistan</td>
+             </tr>
+             <tr>
+                 <td>Wali</td>
+                 <td>Wali@gmail.com</td>
+                 
+                 <td>Pakistan</td>
+             </tr>
+             <tr>
+                 <td colspan="4">End</td>
+             </tr>
+         </tbody>                  
+</body>
+</html>

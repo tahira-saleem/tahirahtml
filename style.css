@@ -1,0 +1,17 @@
+p{
+    background-color:aqua;
+    color: blueviolet;
+    border:20px dotted  ;
+}
+p::before
+{
+
+    content:"tahira" ;
+    color: red;
+}
+p::after
+{
+    content:"the end";
+    color: brown;
+}
+
